@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+        <main>
+            <section>
+                <p id="tempo"></p>
+                <div id="foto"><img src="" alt=""></div>
+            </section>
+        </main>
+    <footer>@CursoemVideo</footer>
+
+    <script>
+        var txt = window.document.getElementById('tempo')
+        var agora = new Date()
+        var hora = agora.getHours()
+        var imagem = window.document.querySelector('img')
+        var fundo = window.document.querySelector('body')
+ 
+        txt.innerText = `Agora são ${hora} horas.`
+        if (hora >=6 && hora < 12) {
+            imagem.src = "imagens/foto-manha.jpg"
+            fundo.style.background = '#687D56'
+        } else if (hora >= 12 && hora <= 18) {
+            imagem.src = "imagens/foto-tarde.jpg"
+            fundo.style.background = '#F25C05'
+        } else {
+            imagem.src = "imagens/foto-noite.jpg"
+            fundo.style.background = '#261C23'
+        }
+    </script>
+</body>
+</html>
