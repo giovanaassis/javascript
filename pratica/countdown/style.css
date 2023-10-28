@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('img/stage-bg.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 5%;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+.countdown {
+    display: flex;
+    gap: 0px 80px;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 7em;
+    text-shadow: 1px 1px 10px white;
+}
+
+.countdown p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.button p {
+    font-size: 1.2em;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.button p:hover {
+    background-color: rgb(204, 204, 204);
+}

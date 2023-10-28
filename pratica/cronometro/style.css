@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    outline: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 3rem;
+    background-color: rgb(240, 240, 240);
+    height: 92vh;
+}
+
+main h1 {
+    color: rgb(41, 80, 255);
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+#crono {
+    display: flex;
+    gap: 20px;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 5rem;
+    min-width: 90px;
+    color: rgb(19, 25, 59);
+}
+
+.separator {
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(110, 108, 108);
+}
+
+#miliseconds {
+    font-size: 2rem;
+    padding-top: 25px;
+    color: rgb(85, 84, 84);
+}
+
+#buttons { display: flex; }
+
+#buttons button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(211, 209, 209);
+    cursor: pointer;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+#buttons button:hover {
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: rgb(41, 80, 255);
+    color: white;
+}
+
+#pauseBtn, #resumeBtn { display: none; }
